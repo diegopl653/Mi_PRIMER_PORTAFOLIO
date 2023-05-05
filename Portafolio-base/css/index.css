@@ -1,6 +1,6 @@
 
 :root { 
-  --primary: #310a90; 
+  --primary: #080F56; 
   --gradient: linear-gradient(45deg, #fad7a1 0%, #e96d71 100%); 
   --white: #ffffff; 
   --gradient: linear-gradient(45deg, #72edf2 0%, #5151e5 100%); 
@@ -16,6 +16,10 @@
   
 }
 
+html{
+  background:linear-gradient(135deg, #95E6F8 0%, #012F74 100%);
+}
+
 body {
   font: var(--body1);
 }
@@ -29,6 +33,153 @@ h2{
   font: var(--headline2);
 }
 
+h4{
+  font: var(--headline4);
+}
+
+h3{
+  font: var(--headline5);
+  color: var(--primary);
+}
+
 p{
   font: var(--button);
+}
+
+.wrapper{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.letras-blancas{
+  color: var(--white);
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header ul *{
+  color: var(--primary);
+  font: var(--button);
+}
+
+header *{
+  text-decoration: none;
+}
+
+.section1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+
+
+.rec-azul{
+  width: 100%;
+  height: 100%;
+  background: #2232C2;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.rec-blanco{
+  position: absolute;
+width: 500px;
+height: 88px;
+left: 738px;
+top: 567px;
+
+background: #FFFFFF;
+border-radius: 0px 0px 24px 24px;
+}
+
+.contenedor .rec-azul img {
+  width: 80%;
+  height: 100%;
+}
+
+.section2{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  width: 100%;
+}
+
+.section2 h2{
+  color: var(--primary);
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.section2 object {
+  width: 80.52px;
+  height: 80.52px;
+}
+
+object{
+  fill: var(--primary);
+}
+
+.section3{
+  display: flex;
+  width: 100%;
+  height: 650px;
+  
+}
+
+.titulo2{
+  background-color: var(--primary);
+}
+
+.part2{
+  display: flex;
+  position: relative;
+}
+
+.container1{
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-secundaria{
+  height: 300px;
+  width: 558px;
+  position: absolute;
+  top: 43.3%;
+  left: 49.6%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and() {
+  
 }

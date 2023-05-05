@@ -6,24 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/index.css">
   <title>Portafolio de Diego</title>
 </head>
 <body>
+  <div class="wrapper">
   <header>
       <h3 class="primary">LOGO</h3>
-      <div>
-        <h4 class="primary">HOLA</h4>
-        <h4 class="letras-blancas">PROYECTOS</h4>
-        <h4 class="letras-blancas">HABLEMOS</h4>
-      </div>
+      <ul>
+        <li><h4 class="primary"><a href="">HOLA</a></h4></li>
+        <li><h4 class="letras-blancas"><a href="">PROYECTOS</a></h4></li>
+        <li><h4 class="letras-blancas"><a href="">HABLEMOS</a></h4></li>
+      </ul>
   </header>
   <main>
       <section class="section1">
-        <img src="./images/jaume.png" alt="imagen fotografica del usuario" title="imagen Diego">
-        <div>
+        <div class="contenedor2">
           <h3 class="primary" class="primary">¡HOLA A TODOS!</h3>
           <h1 class="primary">Soy Diego</h1>
           <p class="primary">Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
@@ -37,6 +40,12 @@
           </div>
           <button class="boton2">DESCARGAR CURRÍCULUM</button>
         </div>
+        <div class="contenedor">
+          <div class="rec-azul">
+            <img src="./images/plantilla perfil.png" alt="imagen fotografica del usuario" title="imagen Diego" class="imagen-contenida">
+            <div class="rec-blanco"></div>
+          </div>
+        </div>
       </section>
       <section class="section2">
         <h2 class="primary">Permíteme presentarte mi portafolio. <br>
@@ -46,13 +55,15 @@
       </section>
       <section class="section3">
         <div class="part1">
-          <h2 class="primary" class="titulo2">github.com/diegopl653</h2>
+          <h4 class="primary" class="titulo2">github.com/diegopl653</h4>
           <p class="primary">Explora mi perfil de GitHub para descubrir mi trabajo!!</p>
           <button class="primary" class="boton2">VISITAR PERFIL</button>
         </div>
         <div class="part2">
-          <img src="./resources/Keep it laptop.svg" alt="Laptop simulacion" title="Laptop">
-          <img src="./images/Captura de pantalla (494).png" alt="Perfil de github" title="perfil-GitHub">
+          <div class="container1">
+            <img src="./resources/Keep it laptop.svg" alt="Laptop simulacion" title="Laptop">
+            <img src="./images/Captura de pantalla (494).png" alt="Perfil de github" title="perfil-GitHub" class="imagen-secundaria">
+          </div>
         </div>
       </section>
       <section class="section3">
@@ -145,6 +156,7 @@
           <button>ENVIAR MENSAJE</button>
         </form>
       </section>
+    </div>
   </main>
   <!-- <h1>Portafolio de Jaume</h1>
   <p>¿Te gustaría crear tu portafolio profesional y conseguir el trabajo de tus sueños? Aquí encontrarás la manera correcta de hacerlo</p>
