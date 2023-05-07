@@ -146,6 +146,7 @@ header *{
 }
 
 .contenedor{
+  display: flex;
   width: 500px;
   height: 500px;
 }
@@ -240,6 +241,11 @@ header *{
 }
 
 .part3 {
+  position: relative;
+  display: inline-block;
+}
+
+.part6 {
   position: relative;
   display: inline-block;
 }
@@ -387,6 +393,73 @@ header *{
 
 }
 
+.section8{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.section8 h2{
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+  font: var(--headline4);
+  width: 40%;
+}
+
+.formulario1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formulario1 p{
+  color: white;
+  text-align: center;
+}
+
+label{
+  margin-left: 20%;
+}
+
+input{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 16px;
+  width: 60%;
+  height: 40px;
+  border: 1px solid #858C94;
+  border-radius: 8px;
+  margin: 8px auto;
+}
+
+.mensaje1{
+  height: 100px;
+}
+
+.formulario1 button{
+  margin: 16px auto;
+  width: 63%;
+  height: 50px;
+}
+
+footer{
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer h2{
+  font: var(--body1);
+  color: white;
+}
+
 @media (max-width: 768px) {
   .boton2{
     width:  fit-content;
@@ -412,16 +485,126 @@ header *{
     flex-direction: column-reverse;
     padding-top: 38px ;
   }
+  .contenedor{
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1/1;
+  }
+  .rec-azul{
+    position: relative;
+    height: auto;
+    width: 100%;
+  }
+  .boton1{
+    width: 90%;
+    margin: auto;
+  }
+  .boton2{
+    margin: auto;
+  }
+  .section2 h2{
+    line-height: 39px;
+    font-size: 24px;
+    letter-spacing: 0.005em;
+  }
+  .section3{
+    height: 450px;
+    flex-direction: column-reverse;
+  }
   .part3 img{
     position: relative;
-    top: 3.6%;
-    left: 12.5%;
+    top: 0.00001%;
+    left: 1%;
     display: block;
     width: 100%;
     height: 100%;
   }
-  .section3{
-    flex-direction: column;
+  .part6 img{
+    position: relative;
+    top: 0.00001%;
+    left: 1%;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
-
+  .titulo2{
+    width: fit-content;
+    height: fit-content;
+  }
+  .titulo2 a{
+    font-size: 24px;
+    line-height: 39px;
+  }
+  .panel{
+    padding: 24px;
+  }
+  .panel h2{
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .combos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .combo object{
+    width: 100%;
+    height: 100%;
+  }
+  .combo h3{
+    font-size: 12px;
+    line-height: 39px;
+  }
+  .combo{
+    height: 85px;
+    width: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* el tamaño de combo se ajusta a la pantalla, vi que en pantallas muy pequeñas, el comprimirlo siempre como el diseño hace que la letra se vea muy pequeña casi ilegible */
+  .section5{
+    flex-direction: column;
+    align-items: center;
+  }
+  .part6 img{
+  position: relative;
+    /* top: 0.00001%;
+    left: 50%; */
+    width: 100%;
+    height: 100%;
+  }
+  .contenedor3 {
+    position: absolute;
+    height: 80%;
+    width: 60%;
+    top: 7.8%;
+    left: 20.5%;
+  }
+  .part1 a{
+    display: block;
+    width: 100%;
+  }
+  .contenedor4{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .part4{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .contenedor4 button{
+    width: 90%;
+    
+  }.section8 h2 {
+    width: 100%;
+  } 
+  footer {
+    padding: 30px;
+  }
 }
